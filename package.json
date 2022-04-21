@@ -11,10 +11,17 @@
     "build": "webpack"
   },
   "jest": {
-    "moduleFileExtensions": ["js", "jsx"],
-    "moduleDirectories": ["node_modules", "bower_components", "shared"],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "bower_components",
+      "shared"
+    ],
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif||webp|svg)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(jpg|jpeg|png|gif|webp|svg)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less|.scss)$": "<rootDir>/__mocks__/styleMock.js"
     }
   },
@@ -26,6 +33,7 @@
     "eslint": "^8.13.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.1.4",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^27.5.1",
@@ -38,5 +46,8 @@
     "webpack-dev-server": "^4.8.1"
   },
   "author": "kiizerd",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "pubsub-js": "^1.9.4"
+  }
 }
