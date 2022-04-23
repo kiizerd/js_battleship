@@ -31,7 +31,7 @@ const Ship = (position, size, aligned = 1) => {
   };
 
   return {
-    size, sections, hasBeenHit, isSunk,
+    size, sections, hasBeenHit, isSunk, aligned,
   };
 };
 
