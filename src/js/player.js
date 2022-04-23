@@ -8,7 +8,14 @@ const Player = (board, number, playerType = 'human') => {
     while (previousFires[move] !== undefined) {
       move = [Math.floor(Math.random() * 10), Math.floor(Math.random() * 10)];
     }
-    return move;
+
+    const movePromise = new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(move);
+      }, 675);
+    });
+
+    return movePromise;
   };
 
   const humanMove = async () => {
