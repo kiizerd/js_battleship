@@ -210,7 +210,7 @@ input[type="reset"]:focus,
 input[type="reset"]:enabled:hover,
 input[type="button"]:focus,
 input[type="button"]:enabled:hover {
-  filter: brightness(1.4);
+  // filter: brightness(1.1);
   cursor: pointer;
 }
 

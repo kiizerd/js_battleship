@@ -1,0 +1,38 @@
+:root {
+  --font-color: black;
+  --game-bg: rosybrown;
+  --board-bg: #3D84A8;
+  --cell-border: white;
+  --cell-hover: rgb(237, 189, 85);
+  --ship-bg: #C9D6DF;
+  --ship-greyed: rgb(123, 123, 193);
+  --fire-miss: grey;
+  --fire-hit: red;
+  --control-btns: #e6c926;
+  --control-btn-hover: #c0a81e;
+  --start-btn: seagreen;
+  --start-btn-hover: gold;
+  --button-text: white;
+  --main-shadow: rgb(124, 92, 92);
+
+  /* Dark theme */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --font-color: black;
+      --game-bg: rosybrown;
+      --board-bg: #3D84A8;
+      --cell-border: white;
+      --cell-hover: rgb(78, 78, 78);
+      --ship-bg: #C9D6DF;
+      --ship-greyed: rgb(123, 123, 193);
+      --fire-miss: white;
+      --fire-hit: red;
+      --control-btns: #e6c926;
+      --control-btn-hover: #c0a81e;
+      --start-btn: seagreen;
+      --start-btn-hover: gold;
+      --button-text: white;
+      --main-shadow: rgb(124, 92, 92);
+    }
+  }
+}
