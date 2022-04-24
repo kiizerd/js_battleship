@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battleship</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  </style>
+<script defer src="bundle.js"></script></head>
+
+<body>
+  <header>
+    <h4>Battleship</h4>
+  </header>
+  <main>
+    <aside id="info" class="info-hidden">
+      <p>Left-click and drag unplaced ships in the bottom box to the board.</p>
+      <p>Right-click a placed ship on the board to rotate it.</p>
+      <ul>
+        <li>
+          <div class="cell empty"></div> - Empty cell
+        </li>
+        <li>
+          <div class="cell ship"></div> - Ships
+        </li>
+        <li>
+          <div class="cell hit"></div> - Fired at cell and hit
+        </li>
+        <li>
+          <div class="cell miss"></div> - Fired at cell and miss
+        </li>
+      </ul>
+      <button id="toggle-info">?</button>
+    </aside>
+    <section id="controls">
+      <button class="control-btn" id="reset-btn">Reset</button>
+      <button class="control-btn" id="start-btn">Start</button>
+      <button class="control-btn" id="random-btn">Random</button>
+    </section>
+    <article id="boards"></article>
+    <span id="status">Place your ships</span>
+  </main>
+</body>
+
+</html>
