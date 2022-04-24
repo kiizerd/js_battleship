@@ -19,3 +19,8 @@ const resetButtonListener = () => {
 };
 
 PubSub.subscribe('RESET_BTN_CLICKED', resetButtonListener);
+
+const infoToggle = document.getElementById('toggle-info');
+infoToggle.addEventListener('click', () => {
+  infoToggle.parentElement.classList.toggle('info-hidden');
+});
